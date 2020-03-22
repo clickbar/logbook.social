@@ -1,0 +1,31 @@
+{
+  "name": "logbook.social",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@clickbar"
+    ]
+  },
+  "dependencies": {
+    "@nuxtjs/tailwindcss": "^1.4.0",
+    "@tailwindcss/ui": "^0.1.3",
+    "nuxt": "^2.12.0"
+  },
+  "devDependencies": {
+    "@clickbar/eslint-config": "2.0.2",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-cypress": "^2.8.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^6.1.2",
+    "prettier": "^1.19.1"
+  }
+}
