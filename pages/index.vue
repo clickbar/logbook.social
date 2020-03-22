@@ -57,27 +57,6 @@
                 />
               </svg>
             </a>
-            <div class="flex items-center -mr-2 md:hidden">
-              <button
-                type="button"
-                class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500"
-                @click="open = true"
-              >
-                <svg
-                  class="w-6 h-6"
-                  stroke="currentColor"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </button>
-            </div>
           </div>
           <div class="hidden md:block md:ml-10">
             <a
@@ -98,75 +77,6 @@
           </div>
         </div>
       </nav>
-
-      <div
-        :class="{ block: open, hidden: !open }"
-        class="absolute inset-x-0 top-0 hidden p-2 md:hidden"
-      >
-        <div
-          x-show="open"
-          x-transition:enter="duration-150 ease-out"
-          x-transition:enter-start="opacity-0 scale-95"
-          x-transition:enter-end="opacity-100 scale-100"
-          x-transition:leave="duration-100 ease-in"
-          x-transition:leave-start="opacity-100 scale-100"
-          x-transition:leave-end="opacity-0 scale-95"
-          class="transition origin-top-right transform rounded-lg shadow-md"
-        >
-          <div class="overflow-hidden bg-white rounded-lg shadow-xs">
-            <div class="flex items-center justify-between px-5 pt-4">
-              <div>
-                <img
-                  class="w-auto h-8"
-                  src="/img/logos/workflow-mark-on-white.svg"
-                  alt=""
-                />
-              </div>
-              <div class="-mr-2">
-                <button
-                  type="button"
-                  class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500"
-                  @click="open = false"
-                >
-                  <svg
-                    class="w-6 h-6"
-                    stroke="currentColor"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div class="px-2 pt-2 pb-3">
-              <a
-                href="#features"
-                class="block px-3 py-2 mt-1 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50"
-                >Features</a
-              >
-              <a
-                href="#faq"
-                class="block px-3 py-2 mt-1 text-base font-medium text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50"
-                >Fragen und Antworten</a
-              >
-            </div>
-            <div>
-              <a
-                href="#"
-                class="block w-full px-5 py-3 font-medium text-center text-indigo-600 transition duration-150 ease-in-out bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700"
-              >
-                Log ind
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <div
         class="max-w-screen-xl px-4 mx-auto mt-8 sm:mt-12 sm:px-6 md:mt-20 xl:mt-24"
@@ -217,7 +127,7 @@
                   type="email"
                   :disabled="submitted"
                   class="block w-full px-3 py-3 text-base leading-6 placeholder-gray-500 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:placeholder-gray-400 focus:shadow-outline focus:border-blue-300 sm:flex-1"
-                  placeholder="Trag deine E-mail ein"
+                  placeholder="Trag deine E-Mail ein"
                 />
                 <div class="hidden">
                   <input type="text" name="address" />
@@ -283,14 +193,15 @@
               />
             </svg>
             <div
-              class="relative w-full mx-auto rounded-lg shadow-lg lg:max-w-md"
+              class="relative w-full mx-auto overflow-hidden rounded-lg shadow-lg lg:max-w-xl"
+              style="padding-bottom: 56.25%;"
             >
               <iframe
-                width="560"
-                height="315"
+                width="853"
+                height="480"
                 src="https://www.youtube-nocookie.com/embed/xRn-b24aogM"
                 frameborder="0"
-                class="rounded-lg shadow-xl"
+                class="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               />
@@ -501,7 +412,7 @@
               />
             </svg>
             <img
-              class="relative mx-auto shadow-lg"
+              class="relative p-4 mx-auto rounded-lg shadow-xl sm:p-0"
               width="400"
               src="~assets/img/begegnungen.png"
               alt=""
@@ -663,7 +574,7 @@
                 />
               </svg>
               <img
-                class="relative mx-auto shadow-lg"
+                class="relative p-4 mx-auto rounded-lg shadow-xl sm:p-0"
                 width="350"
                 src="~assets/img/profil.png"
                 alt=""
@@ -685,7 +596,7 @@
           <br />
           Like unser Youtube-Video.
         </h2>
-        <div class="flex justify-center mt-8">
+        <div class="justify-center mt-8 sm:flex">
           <div class="inline-flex rounded-md shadow">
             <a
               href="#email"
@@ -694,11 +605,11 @@
               E-Mail-Adresse eintragen
             </a>
           </div>
-          <div class="inline-flex ml-3">
+          <div class="inline-flex mt-3 sm:mt-0 sm:ml-3">
             <a
               href="https://www.youtube.com/watch?v=xRn-b24aogM"
               target="_blank"
-              class="inline-flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-indigo-700 transition duration-150 ease-in-out bg-indigo-100 border border-transparent rounded-md hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:shadow-outline focus:border-indigo-300"
+              class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium leading-6 text-indigo-700 transition duration-150 ease-in-out bg-indigo-100 border border-transparent rounded-md hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:shadow-outline focus:border-indigo-300"
             >
               Youtube-Video liken
             </a>
