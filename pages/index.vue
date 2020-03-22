@@ -1,48 +1,5 @@
 <template>
   <div class="relative overflow-hidden bg-white">
-    <div class="hidden lg:block lg:absolute lg:inset-0">
-      <svg
-        class="absolute top-0 transform translate-x-64 -translate-y-8 left-1/2"
-        width="640"
-        height="784"
-        fill="none"
-        viewBox="0 0 640 784"
-      >
-        <defs>
-          <pattern
-            id="9ebea6f4-a1f5-4d96-8c4e-4c2abf658047"
-            x="118"
-            y="0"
-            width="20"
-            height="20"
-            patternUnits="userSpaceOnUse"
-          >
-            <rect
-              x="0"
-              y="0"
-              width="4"
-              height="4"
-              class="text-gray-200"
-              fill="currentColor"
-            />
-          </pattern>
-        </defs>
-        <rect
-          y="72"
-          width="640"
-          height="640"
-          class="text-gray-50"
-          fill="currentColor"
-        />
-        <rect
-          x="118"
-          width="404"
-          height="784"
-          fill="url(#9ebea6f4-a1f5-4d96-8c4e-4c2abf658047)"
-        />
-      </svg>
-    </div>
-
     <div class="relative pt-6 pb-16 md:pb-20 lg:pb-24 xl:pb-32">
       <nav
         class="relative flex items-center justify-between max-w-screen-xl px-4 mx-auto sm:px-6"
@@ -328,29 +285,15 @@
             <div
               class="relative w-full mx-auto rounded-lg shadow-lg lg:max-w-md"
             >
-              <button
-                class="relative block w-full overflow-hidden rounded-lg focus:outline-none focus:shadow-outline"
-              >
-                <img
-                  class="w-full"
-                  src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                  alt="Woman making a sale"
-                />
-                <div
-                  class="absolute inset-0 flex items-center justify-center w-full h-full"
-                >
-                  <svg
-                    class="w-20 h-20 text-indigo-500"
-                    fill="currentColor"
-                    viewBox="0 0 84 84"
-                  >
-                    <circle opacity="0.9" cx="42" cy="42" r="42" fill="white" />
-                    <path
-                      d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z"
-                    />
-                  </svg>
-                </div>
-              </button>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube-nocookie.com/embed/xRn-b24aogM"
+                frameborder="0"
+                class="rounded-lg shadow-xl"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              />
             </div>
           </div>
         </div>
@@ -894,7 +837,7 @@
       >
         <div class="flex justify-center md:order-2">
           <a
-            href="https://twitter.com/IdrisN"
+            href="https://twitter.com/IdrisNobel"
             class="ml-6 text-gray-400 hover:text-gray-500"
           >
             <span class="sr-only">Twitter</span>
