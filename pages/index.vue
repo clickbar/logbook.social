@@ -142,10 +142,8 @@
                 </button>
               </form>
               <p class="mt-3 text-sm leading-5 text-gray-500">
-                Wir nehmen Datenschutz sehr ernst. Lies unsere
-                <a href="#" class="font-medium text-gray-900 underline"
-                  >Datenschutzerklärung</a
-                >.
+                Wir werden deine E-Mail nur dazu verwenden, um dir Updates zum
+                Entwicklungsstand von Logbook zu senden. Sonst nichts.
               </p>
             </div>
           </div>
