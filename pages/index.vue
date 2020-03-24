@@ -125,6 +125,7 @@
                   aria-label="Email"
                   name="email"
                   type="email"
+                  required
                   :disabled="submitted"
                   class="block w-full px-3 py-3 text-base leading-6 placeholder-gray-500 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:placeholder-gray-400 focus:shadow-outline focus:border-blue-300 sm:flex-1"
                   placeholder="Trag deine E-Mail ein"
